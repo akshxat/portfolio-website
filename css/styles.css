@@ -1,0 +1,157 @@
+/* 
+Author: Akshat Bhatnagar
+Date: 2024-12-12
+Description: CSS Styles for Akshat's E-Portfolio
+*/
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 41px;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 41px;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 1rem;  
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h5 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+p {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.subContent p a {
+    color: white;
+}
+
+.subContent li {
+    line-height: 2rem;
+}
+
+footer p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+strong {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.resumeGrid p {
+    color: #d8d8d8;
+}
+
+.resumeTitle h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+canvas#canvas {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 480px) {
+    /* only applies the following properties when on mobile */
+    #navList {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        flex-direction: column;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    #menuToggle:checked + #menuIcon + #navList {
+        display: flex;
+    }
+
+    nav {
+        border-bottom: 2px solid white;
+    }
+
+    .resumeTitle h1 {
+        font-size: 25px;
+    }
+
+    .resumeGrid h2 {
+        font-size: 25px;
+    }
+
+    .subContent li {
+        line-height: 1.5rem;
+        font-size: 14px;
+    }
+
+    canvas#canvas {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    /* Applies the following properties when on desktop and tablet */
+    #menuIcon {
+        display: none;
+    }
+
+    .resumeTitle h1 {
+        font-size: 32px;
+    }
+
+    .resumeGrid h2 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* only applies the following properties when on desktop */
+    nav ul li a:hover {
+        background-color: #292929;
+    }
+
+    nav ul li a:active {
+        background-color: #3c3c3c;
+    }
+}
