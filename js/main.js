@@ -4,21 +4,6 @@
     Description: JavaScript for Akshat's E-Portfolio
 */
 
-const quoteArea = document.getElementById('quote');
-const quoteUrl = 'https://programming-quotes-api.azurewebsites.net/api/quotes/random';
-
-const getQuote = async (url) => {
-    try {
-        const response = await fetch(url);
-        const quoteJSON = await response.json();
-        quoteArea.innerHTML = `"${quoteJSON.text}"`;
-    } catch (error) {
-        console.error('An error occurred:', error);
-    }
-}
-
-getQuote(quoteUrl);
-
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 
