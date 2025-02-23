@@ -8,7 +8,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="Akshat, Bhatngar, Web Developer, Web Development, Programming, Programmer, Portfolio, Resume, JavaScript, CSS, HTML, Node, Media, Film Making, Film Maker">
+    <meta name="keywords"
+        content="Akshat, Bhatngar, Web Developer, Web Development, Programming, Programmer, Portfolio, Resume, JavaScript, CSS, HTML, Node, Media, Film Making, Film Maker">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Normalize CSS Stylesheet source: https://github.com/csstools/normalize.css -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -16,7 +17,13 @@
     <link href="css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Playfair+Display&family=Raleway:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Playfair+Display&family=Raleway:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf_viewer.min.css"
+        integrity="sha512-3RmdRrL3AYc82NkZyJY3Id9029bY37R6LtgNQkNRdZm+eI0sVjV/J5IF9QsC8VDUheqJ9pxCBQc8ts6wiOXIOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="./js/main.js" defer></script>
     <title> Resume - Akshat's Portfolio </title>
 </head>
@@ -41,49 +48,11 @@
                     </ul>
                 </nav>
             </header>
-            <div class="resumeTitle">
-                <h1>Resume - Akshat Bhatnagar</h1>
-                <p>Email: akshat.bhatnagar@icloud.com | Phone: +1 (613) 712 2958 | Location: Halifax, NS</p>
-            </div>
-            <div class="resumeGrid">
-                <div class="work">
-                    <h2>Work Experience</h2>
-                    <p><strong>Search Engine Optimization (SEO) - Finnobi Forest, Ottawa</strong><br>Feb 2024 - Apr 2024<br>Search engine optimisation for the organisation's website, Keyword research and analysis, Technical SEO</p>
-                    <p><strong>Web Developer - Ottawa Therapy Dogs, Ottawa</strong><br>Jan 2024 - Apr 2024<br>Designing and building a website for the organisation, Team Lead, Created project timeline and Gantt charts</p>
-                    <p><strong>Film Editor - Symansys technologies, Delhi</strong><br>Aug 2022 - Aug 2023<br>Editing and arranging film segments into sequences, Integrating video clips, music, voice-overs, titles, and annotations to create the required result and achieve continuity, Compressing and re-encoding renders to ensure consistent formatting</p>
-                    <p><strong>Multimedia Internship - Symansys technologies, Virtual</strong><br>Jul 2021 - Aug 2021</p>
-                </div>
-                <div class="education">
-                    <h2>Education</h2>
-                    <p><strong>Post Graduate Certificate (PGCert), Full Stack Application Development - Nova Scotia Community College</strong><br>2024 - 2025</p>
-                    <p><strong>Post Graduate Certificate (PGCert), Interactive Media Management - Algonquin College Of Applied Arts And Technology</strong><br>2023 - 2024<br>CGPA: 3.93/4</p>
-                    <p><strong>Bachelor of Arts (B.A.), Media And Communication - Symbiosis Centre For Media & Communication</strong><br>2019 - 2022<br>CGPA: 6.93/10</p>
-                </div>
-                <div class="certifications">
-                    <h2>Certifications</h2>
-                    <p><strong>Organizational Culture - National Association Of State Boards Of Accountancy (NASBA) & Project Management Institute (PMI)®, Virtual</strong><br>Sep 2024 - Oct 2024</p>
-                    <p><strong>Building Cloud Native And Multicloud Applications - IBM Developer Skills Network, Virtual</strong><br>May 2022 - Jun 2022</p>
-                    <p><strong>INTRODUCTION TO CLOUD - IBM Developer Skills Network, Virtual</strong><br>May 2022 - Jun 2022</p>
-                    <p><strong>Python 101 For Data Science - IBM Developer Skills Network, Virtual</strong><br>May 2022 - Jun 2022</p>
-                    <p><strong>Trading Basics - INDIAN SCHOOL OF BUSINESS (ISB), Virtual</strong><br>Jul 2020 - Aug 2020</p>
-                    <p><strong>Final Cut Pro Video Editing - Learnquest, Virtual</strong><br>Jun 2020 - Jul 2020</p>
-                </div>
-                <div class="projects">
-                    <h2>Projects</h2>
-                    <p><strong>Kalari (Documentary)</strong><br>Apr 2022 - May 2022<br>"Kalari" is a documentary about an ancient Indian martial arts form of Kalarippayattu. Role: Editor, Director, Camera, Sound</p>
-                    <p><strong>Life is a Movie (Film)</strong><br>Feb 2022 - Apr 2022<br>"Life is a Movie" is a feature length film which revolves around a camera that is invented which traps the subject of the photo taken inside a mirror reality within it. Role: Cameraperson & Script Supervisor</p>
-                    <p><strong>Video Advertisement for Orangelife Adventures</strong><br>May 2021<br>Orangelife Adventures is a resort in Kamshet, Maharashtra. Worked on a video advertisement to promote their business. Role: Editor, Director, Camera</p>
-                </div>
-                <div class="extracurricular">
-                    <h2>Extra Curricular Activities</h2>
-                    <p>Team Lead for client project during the Interactive Media Management program at Algonquin College.</p>
-                    <p>Photography Coordinator at Symbiosis Centre for Media and Communication</p>
-                </div>
-                <div class="additional">
-                    <h2>Additional Details</h2>
-                    <p>Sold photographs worth a total of 170 CAD on Getty images.</p>
-                </div>
-            </div>
+            <main>
+                <section class="resume">
+                    <h3 class="subheading"> Resume </h3>
+                    <canvas id="pdf-canvas"></canvas>
+            </main>
         </div>
         <footer>
             <p>

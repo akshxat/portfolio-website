@@ -22,6 +22,10 @@ nav ul {
     list-style: none;
 }
 
+.subheading {
+    text-align: center;
+}
+
 .about {
     display: block;
     margin-left: auto;
@@ -49,23 +53,16 @@ nav ul {
     width: 100%;
 }
 
-.resumeGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    padding: 20px;
+.resume {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.resumeGrid h2 {
-    margin-left: 0;
-}
-
-.resumeTitle, .work, .education, .certifications, .projects, .skills, .extracurricular, .additional {
-    margin-bottom: 20px;
-}
-
-.resumeTitle p {
-    margin-left: 1rem;
+#pdf-canvas {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .skillsFlex {
@@ -128,14 +125,6 @@ nav ul {
         margin-right: 2rem;
     }
 
-    .resumeGrid, .resumetitle {
-        font-size: 14px;
-    }
-    .resumeGrid {
-        padding: 10px;
-        grid-gap: 10px;
-    }
-
     .skill {
         max-width: 85%;
     }
@@ -162,6 +151,12 @@ nav ul {
 
     .margin-fix {
         margin: 8px;
+    }
+
+    #pdf-canvas {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
     }
 }
 
@@ -201,7 +196,9 @@ nav ul {
         justify-content:space-between;
     }
 
-    .resumeGrid {
-        grid-template-columns: 1fr 2fr;
+    #pdf-canvas {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
     }
 }
