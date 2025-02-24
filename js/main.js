@@ -27,3 +27,10 @@ pdfjsLib.getDocument(pdf).promise.then(pdf => {
 }).catch(error => {
 	console.error('Error loading PDF:', error);
 });
+
+const updateCursor = ({ x, y }) => {
+	document.documentElement.style.setProperty('--x', x)
+	document.documentElement.style.setProperty('--y', y)
+}
+
+document.body.addEventListener('pointermove', updateCursor)

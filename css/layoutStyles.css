@@ -72,9 +72,19 @@ nav ul {
     width: 22rem;
     padding: 0.5rem;
     margin: 1rem;
-    border: solid 2px rgb(190, 190, 190);
     align-items: center;
-    transition: 350ms;
+    transition: background-color 1s !important;
+}
+
+.btn {
+    transition: 1s !important;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 10px 2px white
 }
 
 .skill:hover {
@@ -90,7 +100,6 @@ nav ul {
 .skill p {
     font-size: 30px;
     margin: 1rem;
-    color: inherit;
 }
 
 .skills h3 {
@@ -110,7 +119,7 @@ nav ul {
 }
 
 .homeSections {
-    margin: 3rem auto;
+    padding: 3rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -148,6 +157,10 @@ nav ul {
 
     .largeScreenOnly {
         display: none;
+    }
+
+    .skill {
+        border: white 2px solid;
     }
 }
 
@@ -198,7 +211,6 @@ nav ul {
     #mainImg {
         float: right;
         width: 35%;
-        margin-left: 2rem;
         margin-bottom: 2rem;
     }
 
